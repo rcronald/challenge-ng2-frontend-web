@@ -1,0 +1,21 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  readonly_paths:
+    - src/app/app.component.spec.ts
+  scoring:
+    command: "npm test"
+    files:
+      - unit.xml
+  ide_config:
+    default_open_files:
+      - src/app/app.component.ts
+      - src/app/app.component.html
+      - src/app/resourceDetails/resourceDetails.component.ts
+      - src/app/resourceDetails/resourceDetails.component.html
+      - src/app/resourceTable/resourceTable.component.ts
+      - src/app/resourceTable/resourceTable.component.html
+    project_menu:
+      run: npm start
+      install: npm install
+      test: npm test
